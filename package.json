@@ -1,0 +1,19 @@
+{
+  "name": "tslwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "dev": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.30.0"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.2.1"
+  }
+}
