@@ -46,6 +46,7 @@
 
 .our-service {
     padding-top: 30px;
+
     p {
         color: $fajka-pink;
         font-size: 24px;
@@ -56,13 +57,14 @@
 
 .service-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     margin: 50px 0;
 }
+
 .service-box {
     background: #fff;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 20px;
 
     p {
@@ -95,21 +97,24 @@
         color: $fajka-blue;
     }
 }
+
 .decoration {
     border-bottom: 5px solid $base-color;
 }
+
 .service-box.active {
     box-shadow: 0 10px 0px #F5B1BC;
+
     .icon-box {
         background-color: $fajka-blue;
     }
 
     .icon-content {
-    
+
         h3 {
-            color:$fajka-blue;
+            color: $fajka-blue;
         }
-    
+
         p {
             color: #ED8936;
         }
@@ -123,7 +128,8 @@
 }
 
 .clients {
-    margin-top: 80px !important;;
+    margin-top: 80px !important;
+    ;
 
     h1 {
         color: $fajka-green;
@@ -136,15 +142,17 @@
 }
 
 
-.showcase-works{
+.showcase-works {
     display: flex;
     justify-content: space-around;
 }
+
 .showcase {
-        background-color: $fajka-green;
-        padding: 20px;
-        margin: 50px 0;
-        cursor: pointer;
+    background-color: $fajka-green;
+    padding: 20px;
+    margin: 50px 0;
+    cursor: pointer;
+
     img {
         object-fit: cover;
     }
@@ -165,7 +173,7 @@
 
 }
 
-.showcase.two{
+.showcase.two {
     -webkit-transform: rotate(4deg);
     -ms-transform: rotate(4deg);
     transform: rotate(4deg);
@@ -177,9 +185,10 @@
 
 .client-grid {
     display: grid;
-    grid-template-columns: repeat(9,1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-gap: 10px;
     margin: 30px 0;
+
     img {
         width: 100%;
         border: 1px solid $fajka-green;
@@ -191,6 +200,7 @@
 .four {
     padding-top: 80px;
     background-color: $orange-light;
+
     img {
         width: 100%;
     }
@@ -203,10 +213,11 @@
 .emoji-size {
     font-size: 24px;
 }
-  
+
 .why-notTo {
     margin: 50px 0;
 }
+
 .why-starter {
     h4 {
         color: #000;
@@ -218,11 +229,207 @@
         font-size: 18px;
     }
 
-    img{
+    img {
         width: 60px;
         background-color: #fff;
         padding: 10px;
         border-radius: 20px 10px;
         margin-right: 10px;
     }
+}
+
+.testimonial-fold {
+    padding-top: 80px;
+    background-color: #EBFAFC;
+
+
+    h2 {
+        color: #000;
+        text-align: center;
+    }
+}
+
+
+.testimonial-slider {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.testimonial-block {
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 15px 47px 0 rgb(129 173 181 / 26%);
+    padding: 50px;
+    margin: 0 60px;
+    position: relative;
+
+    h3 {
+        color: #000;
+    }
+
+    p {
+        color: #354b5b;
+    }
+
+}
+
+.container-inner {
+    display: flex;
+}
+
+.hr {
+    width: 80px;
+    height: 10px;
+    background-color: #ff8300;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.hire-us {
+    background-color: #312992;
+
+}
+
+.pd-top-80 {
+    padding: 80px 30px;
+}
+
+.careers {
+    background-color: #ff8300;
+    height: 100%;
+
+}
+
+.hire-div,
+.careers-div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+
+    img {
+        margin: auto;
+    }
+}
+
+.btn-hire {
+    color: #312992;
+    background-color: #fff;
+    margin: auto;
+
+    &:hover {
+        color: #fff;
+        background-color: #312992;
+        margin: auto;
+        border: 1px solid #fff;
+    }
+}
+
+.btn-career {
+    color: #ff8300;
+    margin: auto;
+    background-color: #fff;
+    &:hover {
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: #ff8300;
+    }
+}
+
+//////-----------Media Queries --------------///////
+@media only screen and (max-width: 500px) {
+
+    .testimonial-slider {
+        display: flex;
+        width: 100%;
+        white-space: nowrap;
+        overflow-x: scroll;
+        margin-bottom: 20px;
+    }
+
+    .container-inner {
+        padding: 0 20px;
+    }
+
+
+    .testimonial-block {
+        padding: 20px;
+        margin: 30px 0;
+        margin-right: 30px;
+        white-space: normal;
+        width: 300px;
+
+        h3 {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        margin: 30px 0;
+    }
+
+    .service-box {
+        text-align: center;
+    }
+
+    .icon-box {
+        margin: auto;
+    }
+
+    .icon-content {
+        margin: 0;
+    }
+
+
+    .service-box.active .icon-content h3 {
+        color: #312992;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    /////----Why Starter Labs--------////
+
+    .why-starter p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .client-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .clients p {
+        font-size: 16px;
+    }
+
+    .our-service p {
+        font-size: 16px;
+    }
+
+    .first-fold p {
+        font-size: 16px;
+    }
+
+    .why-starter h4 {
+        font-size: 18px;
+    }
+
+    .hire-div,
+    .careers-div {
+        width: 100%;
+    }
+
+
 }
