@@ -338,6 +338,21 @@
     }
 }
 
+
+.join-us {
+    color: #000;
+    padding: 30px 0;
+
+    h5 {
+        color: #000;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    span {
+        color: #ff8300;
+    }
+}
 //////-----------Media Queries --------------///////
 @media only screen and (max-width: 500px) {
 
