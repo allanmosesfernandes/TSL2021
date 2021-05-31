@@ -1,0 +1,115 @@
+.about-first {
+    height: 100vh;
+    background-image: url('../images/about/wave-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #000000;
+}
+
+.about-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    h2,p {
+        color: #000000;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .sub-header {
+        font-size: 16px;
+    }
+
+    p {
+        margin-top: 10px;
+        width: 60%;
+    }
+}
+
+.container-fluid {
+    max-width: 1440px;
+}
+
+.about-sections {
+    background-color: #e0f8f1;
+}
+.about-sections-2, 
+.about-sections-5 {
+    background-color: #ECFAF6;
+}
+
+.center-aligned {
+    margin: auto;
+}
+.about-sections-5 {
+    text-align: center;
+    padding: 30px;;
+}
+.about-sections-3 {
+    background-color: #C1EFE2;
+}
+.about-sections-4 {
+    background-color: #E0F8F1;
+}
+.about-us-text {
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    width: 90%;
+
+
+    h3,p {
+        color: #000000;
+        z-index: 1;
+    }
+
+    .highlight {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+}
+
+.know-more {
+    margin: auto;
+    margin-top: -100px;
+    z-index: 0;
+}
+//////-----------Media Queries --------------///////
+@media only screen and (max-width: 500px) {
+
+    .about-first {
+        background-position: 50% 20%;
+    }
+    .about-div {
+       
+        p {
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+
+
+    .about-us-text {
+        width: 100%;
+        padding: 20px;
+        z-index: 1;
+        text-align: center;
+
+      
+    }
+
+    .about-images {
+        margin-top: -50px;
+    }
+
+    .know-more {
+        margin-top: 0;
+    }
+}
